@@ -1,14 +1,14 @@
 (function() {
-const context = document.getElementById("canvas").getContext("2d");
-const canvas = context.canvas;
-const sceneColor = "#00AAFF";
-const w = 220; // width of the frame in the Sprite Sheet
-const h = 450; // height of the frame in the Sprite Sheet
-const maxFrameLength = 3;
-const scale = 1; // scale of the frame
-let delay = 4; // delay till animating the next frame
-let count = 0; // counter for the delay
-let currentFrameX = 1; // start frameX
+  const context = document.getElementById("canvas").getContext("2d");
+  const canvas = context.canvas;
+  const sceneColor = "#00AAFF";
+  const w = 220; // width of the frame in the Sprite Sheet
+  const h = 450; // height of the frame in the Sprite Sheet
+  const maxFrameLength = 3;
+  const scale = 1; // scale of the frame
+  let delay = 4; // delay till animating the next frame
+  let count = 0; // counter for the delay
+  let currentFrameX = 1; // start frameX
 
   const centerCanvas = () => {
     canvas.style.marginTop =
