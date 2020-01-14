@@ -1,4 +1,4 @@
-(function() {
+(() => {
   const context = document.getElementById("canvas").getContext("2d");
   const canvas = context.canvas;
   const sceneColor = "#00AAFF";
@@ -45,7 +45,7 @@
     context.drawImage(spriteSheet, sx, sy, w, h, 0, 0, w * scale, h * scale);
   };
 
-  const frame = function() {
+  const frame = () => {
      animate(); requestAnimationFrame(frame);
   };
 
